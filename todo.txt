@@ -1,0 +1,29 @@
+Information :
+
+Qu'est-ce qu'un semaphore ?
+-> wait
+-> signal
+
+Avoir une array de chopstick
+binary semaphore 
+0 1 to know if its used or not
+if 1 its free
+if 0 its not free
+initially all the chopstick are initialized by 1 
+pseudocode:
+do
+	wait chopstick i
+	wait chopstick i+1 % 5
+// eat 
+signal(chopstick of i )
+signal((hopstick i + 1))
+
+// think
+
+pb : if all the philosopher are hungry at the same time
+
+eviter les deadlock:
+- autoriser seulement 4 personnes a s'asseoir en meme temps sur la table 
+- autoriser un philosopher de prendre les chopsticks si les deux chopsticks de son cote sont libres
+- asymetrique solution: un philosophe sur une place impaire prends en premier la fourchette de gauche puis la fourchette de droite tandis que un philosophe assis sur une place paire prends lui, en premier sa fourchette de droite puis sa fourchette de gauche.
+
