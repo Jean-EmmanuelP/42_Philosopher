@@ -1,6 +1,7 @@
 #include <sys/time.h>
 #include <stdio.h>
-
+#include <stdio.h>
+#include <unistd.h>
 int main()
 {
     struct timeval start, end;
@@ -11,6 +12,7 @@ int main()
     for (i = 0; i < 100; i++)
         i++;
     printf("value de i : %d\n", i);
+    usleep(1000);
 
     gettimeofday(&end, NULL);
 
